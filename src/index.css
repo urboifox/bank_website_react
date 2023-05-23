@@ -142,3 +142,13 @@
   filter: blur(750px);
   -webkit-filter: blur(750px);
 }
+
+.gridme {
+  @apply grid gap-4;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: space-between;
+}
+
+/* * {
+  border: 1px solid red;
+} */
