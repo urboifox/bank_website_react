@@ -12,7 +12,7 @@ const FeedbackCard = ({ content, profile, name, title }) => {
       </div>
       <div>
         <p
-          className={`${style.paragraph} text-white min-h-[100px] flex items-center justify-center mb-4`}
+          className={`${style.paragraph} text-left  text-white min-h-[100px] flex items-center justify-start mb-4`}
         >
           {content}
         </p>

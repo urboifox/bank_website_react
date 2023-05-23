@@ -1,6 +1,7 @@
 import style from "../style";
-import FeedbackCard from "./FeedbackCard";
+import { FeedbackCard, Clients } from ".";
 import { feedback } from "../constants";
+import { airbnb, binance, coinbase, dropbox } from "../assets";
 
 const Testimonials = () => {
   const feedbackCards = feedback.map((e) => {
@@ -35,6 +36,12 @@ const Testimonials = () => {
         </div>
         <div className="mt-16 gridme ">{feedbackCards}</div>
       </div>
+      <Clients
+        client1={airbnb}
+        client2={binance}
+        client3={coinbase}
+        client4={dropbox}
+      />
     </section>
   );
 };
