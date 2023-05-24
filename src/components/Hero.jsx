@@ -13,7 +13,7 @@ const Hero = () => {
       >
         <div className="uppercase w-fit mb-2 flex items-center rounded-[10px] justify-start p-2 pr-4 bg-discount-gradient">
           <img src={discount} className="w-[32px] h-[32px]" alt="discount" />
-          <p className="flex gap-[5px] text-dimWhite md:text-[18px]">
+          <p className="flex gap-[5px] text-dimWhite md:text-[18px] max-sm:text-[13px]">
             <span className="text-white">20% </span>
             discount for
             <span className="text-white"> 1 month </span> account
@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
 
         <div className="flex items-center relative">
-          <h1 className="font-semibold text-[72px] leading-[100px]">
+          <h1 className="font-semibold text-[72px] z-[1] max-sm:text-[60px] leading-[100px]">
             The Next
             <br />
             <span className="text-gradient">Generation</span>
@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
           <div className="blue__gradient opacity-[100%] w-[30%] h-[500px] absolute -left-[50%] md:-left-[50%] top-[0px]"></div>
         </div>
-        <h1 className="font-semibold text-[72px] leading-[100px]">
+        <h1 className="font-semibold text-[72px] max-sm:text-[60px] leading-[100px]">
           Payment Method
         </h1>
         <p className="mt-6 text-[18px] text-dimWhite max-w-[500px]">

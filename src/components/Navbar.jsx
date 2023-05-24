@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { logo, menu, close } from "../assets";
 import { navLinks } from "../constants";
 import { nanoid } from "nanoid";
@@ -6,27 +6,9 @@ import style from "../style";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const [active, setActive] = useState(navLinks[0].id);
-  const sections = document.querySelectorAll("section");
-
-  const handleScroll = () => {
-    sections.forEach((section) => {
-      const rec = section.offsetTop;
-
-      if (rec <= window.innerHeight) {
-        setActive(section.id);
-      }
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      handleScroll();
-    });
-  }, []);
 
   const handleNavClick = (id) => {
-    setActive(id);
+    const sections = document.querySelectorAll("section");
     sections.forEach((section) => {
       if (section.id === id) {
         window.scrollTo(0, section.offsetTop);
@@ -54,7 +36,7 @@ const Navbar = () => {
                 className={`${
                   e === navLinks[navLinks.length - 1] ? "mr-0" : "mr-5"
                 } ${
-                  e.id === active ? "nav-active" : ""
+                  e.id === navLinks[0].id ? "nav-active" : ""
                 } cursor-pointer transition-all duration-200 text-dimWhite hover:text-white md:text-[18px]`}
                 id={e.id}
                 key={nanoid()}
@@ -85,21 +67,21 @@ const Navbar = () => {
       <div
         className={`${
           toggle ? "flex" : "hidden"
-        } sm:hidden sidebar bg-black-gradient p-6 absolute top-20 right-0 px-10 rounded-xl`}
+        } sm:hidden sidebar bg-black-gradient p-6 z-40 absolute top-20 right-0 px-10 rounded-xl`}
       >
-        <ul className="flex flex-col items-center ">
+        <ul className="flex flex-col items-center">
           {navLinks.map((e) => {
             return (
               <li
                 className={`${
                   e === navLinks[navLinks.length - 1] ? "mb-0" : "mb-5"
                 } ${
-                  e.id === active ? "nav-active" : ""
+                  e.id === navLinks[0].id ? "nav-active" : ""
                 } cursor-pointer transition-all duration-200 text-White hover:text-white`}
                 id={e.id}
                 key={nanoid()}
                 onClick={() => {
-                  setActive(e.id);
+                  handleNavClick(e.id);
                 }}
               >
                 {e.title}
