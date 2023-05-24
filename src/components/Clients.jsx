@@ -12,7 +12,7 @@ const Clients = (props) => {
   return (
     <section
       id="clients"
-      className="overflow-x-scroll justify-between no-bar scroll flex items-center mt-20"
+      className="overflow-x-scroll justify-between no-bar flex items-center mt-20"
     >
       {clientsDisplay}
     </section>

@@ -7,6 +7,7 @@ import {
   CardDeal,
   Testimonials,
   CTA,
+  Footer,
 } from "./components";
 import style from "./style";
 
@@ -23,6 +24,7 @@ const App = () => {
         <Testimonials />
         <CTA />
       </div>
+      <Footer />
     </div>
   );
 };

@@ -148,10 +148,16 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: space-between;
 }
-
+.gridme-sm {
+  @apply grid gap-4;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-between;
+}
 .no-bar {
   scrollbar-width: none;
-  scrollbar-width: none;
+}
+.no-bar::-webkit-scrollbar {
+  width: none;
 }
 
 /* * {

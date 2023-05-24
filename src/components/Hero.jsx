@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="max-ss:hidden ml-10">
             <GetStarted />
           </div>
-          <div className="blue__gradient opacity-[100%] w-[30%] h-[500px] absolute -left-[50%] md:-left-[50%] top-[0px]"></div>
+          <div className="blue__gradient opacity-[50%] w-[30%] h-[500px] absolute -left-[50%] md:-left-[50%] top-[0px]"></div>
         </div>
         <h1 className="font-semibold text-[72px] max-sm:text-[60px] leading-[100px]">
           Payment Method
@@ -42,9 +42,9 @@ const Hero = () => {
       </div>
       <div className="relative my-20 md:my-0 max-w-[670px] z-50">
         <img className="object-contain w-full h-full" src={robot} alt="robot" />
-        <div className="opacity-[25%] absolute pink__gradient w-[60%] h-[70%] top-[0%] left-0 -z-10"></div>
-        <div className="opacity-[100%] absolute blue__gradient w-[70%] h-[70%] top-[20%] right-0 -z-20"></div>
-        <div className="opacity-[20%] absolute white__gradient w-[30%] h-[70%] top-[0%] left-[42%] -z-[30]"></div>
+        <div className="opacity-[45%] absolute pink__gradient w-[50%] h-[50%] top-[15%] left-32 -z-10"></div>
+        <div className="opacity-[80%] absolute blue__gradient w-[70%] h-[70%] top-[20%] right-0 -z-20"></div>
+        <div className="opacity-[30%] absolute white__gradient w-[30%] h-[70%] top-[0%] left-[42%] -z-[30]"></div>
       </div>
       <div className="ss:hidden self-center">
         <GetStarted />
