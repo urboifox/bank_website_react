@@ -14,6 +14,7 @@ const Navbar = () => {
         window.scrollTo(0, section.offsetTop);
       }
     });
+    setToggle((prev) => !prev);
   };
 
   return (

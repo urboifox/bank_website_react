@@ -13,7 +13,7 @@ const CTA = () => {
           <h2 className={`${style.heading2} mb-5`}>
             Let’s try our service now!
           </h2>
-          <p className={`${style.paragraph} max-w-[65%]  max-md:mx-auto`}>
+          <p className={`${style.paragraph} sm:max-w-[70%]  max-md:mx-auto`}>
             Everything you need to accept card payments and grow your business
             anywhere on the planet.
           </p>

@@ -10,9 +10,12 @@ const Clients = (props) => {
     );
   });
   return (
-    <div className="overflow-x-scroll justify-between no-bar scroll flex items-center mt-20">
+    <section
+      id="clients"
+      className="overflow-x-scroll justify-between no-bar scroll flex items-center mt-20"
+    >
       {clientsDisplay}
-    </div>
+    </section>
   );
 };
 
