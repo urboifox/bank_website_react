@@ -8,9 +8,7 @@ const Hero = () => {
       id="home"
       className={`py-10 flex items-end justify-between flex-col md:flex-row w-[100%]`}
     >
-      <div
-        className={`${style.paddingX} flex self-start md:self-center flex-col`}
-      >
+      <div className={`${style.paddingX} flex self-start flex-col`}>
         <div className="uppercase w-fit mb-2 flex items-center rounded-[10px] justify-start p-2 pr-4 bg-discount-gradient">
           <img src={discount} className="w-[32px] h-[32px]" alt="discount" />
           <p className="flex gap-[5px] text-dimWhite md:text-[18px] max-sm:text-[13px]">

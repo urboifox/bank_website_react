@@ -14,7 +14,7 @@
 
 ### Screenshot
 
-![](./src/screenshot.jpg)
+![](./src/screenshot.png)
 
 ### Links
 
@@ -31,5 +31,5 @@
 
 ## Author
 
-- Website - [Mohamed](https://www.mohamed-dev.netlify.app)
+- Website - [Mohamed](https://mohamed-dev.netlify.app)
 
