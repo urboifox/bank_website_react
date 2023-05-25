@@ -35,7 +35,7 @@ const Footer = () => {
   });
 
   return (
-    <footer className={`bg-black`}>
+    <footer>
       <div
         className={`${style.boxWidth} ${style.paddingX} ${style.paddingY} mx-auto`}
       >
